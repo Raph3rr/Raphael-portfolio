@@ -640,7 +640,7 @@ button:focus {
     text-align: center !important;
     justify-content: center !important;
     gap: 0.5rem !important;
-    /* flex-wrap: wrap !important; */
+    flex-wrap: wrap !important;
   }
 }
 
