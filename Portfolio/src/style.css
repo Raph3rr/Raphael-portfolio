@@ -635,6 +635,15 @@ button:focus {
   }
 }
 
+@media (max-width: 767px) {
+  .react-activity-calendar__footer {
+    text-align: center !important;
+    justify-content: center !important;
+    gap: 0.5rem !important;
+    /* flex-wrap: wrap !important; */
+  }
+}
+
 /* --------- */
 /* Resume */
 /* --------- */
