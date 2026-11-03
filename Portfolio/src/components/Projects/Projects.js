@@ -2,15 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-// import leaf from "../../Assets/Projects/leaf.png";s
-// import emotion from "../../Assets/Projects/emotion.png";
-// import editor from "../../Assets/Projects/codeEditor.png";
-// import chatify from "../../Assets/Projects/chatify.png";
-// import suicide from "../../Assets/Projects/suicide.png";
-// import bitsOfCode from "../../Assets/Projects/blog.png";
 import likitaai from "../../Assets/Projects/likitaai.png";
 import cradle from "../../Assets/Projects/cradle.png";
-import gerolab from "../../Assets/Projects/gerolab.png"
+import gerolab from "../../Assets/Projects/gerolab.png";
+import betlyze from "../../Assets/Projects/betlyze.jpg";
+import tech from "../../Assets/Projects/tech.jpg";
+import caleb from "../../Assets/Projects/caleb.jpg";
 
 function Projects() {
   return (
@@ -24,6 +21,18 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={betlyze}
+              isBlog={false}
+              title="Betlyze"
+              description="Betlyze: An AI-powered football prediction and bet code conversion platform that offers match predictions and allows users to seamlessly convert booking codes between different bookies, built using React and Tailwind, and integrated with football and odds APIs."
+              ghLink="https://github.com/Raph3rr/Betlyze"
+              demoLink="https://betlyze-seven.vercel.app/"              
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={likitaai}
@@ -54,6 +63,28 @@ function Projects() {
               description="Gerolab is a web application that provides users with a platform to access laboratory services and information. Built using Html, Css and Js, Gerolab aims to streamline the process of booking lab tests, accessing results, and managing health records online."
               ghLink="https://github.com/Raph3rr/Gerolab"
               demoLink="https://gerolab.vercel.app/"              
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={caleb}
+              isBlog={false}
+              title="Caleb Portfolio"
+              description="Caleb's Portfolio: A professional data analyst portfolio website designed to showcase analytical projects, dashboards, and skills, built using React and Tailwind."
+              ghLink="https://github.com/Raph3rr/Caleb-Portfolio"
+              demoLink="https://caleb-portfolio-rouge.vercel.app/"              
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={tech}
+              isBlog={false}
+              title="Tech School"
+              description="Tech School: A tech academy platform offering practical learning tracks in web development, data analysis, and cybersecurity, built using React and Tailwind with a modern SaaS layout."
+              ghLink="https://github.com/Raph3rr/Tech-school"
+              demoLink="https://tech-school-theta.vercel.app/"              
             />
           </Col>
 
